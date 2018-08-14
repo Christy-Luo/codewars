@@ -9,5 +9,11 @@ function NumberOf1(n) {
 }
 
 function NumberOf1(n) {
-
+    var count = 0;
+    while(n != 0) {
+        count ++;
+        // 可以获取有多少个1
+        n = n&(n-1);
+    }
+    return count;
 }
